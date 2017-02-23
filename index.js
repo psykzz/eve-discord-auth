@@ -3,9 +3,9 @@ var debug = require("debug")("BATBot:index");
 var web = require('./lib/web');
 var bot = require('./lib/discord');
 var db = require('./lib/db');
-require('heroku-self-ping')("http://your-app-url");
-
 var config = require('./config');
+require('heroku-self-ping')(config.APP_URL);
+
 
 db.connectToServer((err) => {
   if(err) {

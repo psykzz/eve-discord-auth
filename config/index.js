@@ -9,5 +9,6 @@ module.exports = {
   DISCORD_TOKEN: process.env.DISCORD_TOKEN,
   DISCORD_CORP_ROLE: process.env.DISCORD_CORP_ROLE,
   DISCORD_ALLIANCE_ROLE: process.env.DISCORD_ALLIANCE_ROLE,
+  APP_URL: process.env.APP_URL,
   LISTEN_PORT: process.env.LISTEN_PORT || process.env.PORT || "3000"
 };
